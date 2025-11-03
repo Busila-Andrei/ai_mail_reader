@@ -1,0 +1,5 @@
+# Minimal deps for all checkers (superset). Adjust if not needed.
+pywin32
+msal
+requests
+
