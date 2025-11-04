@@ -4,20 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="42a595b6-d943-4874-aa9e-5e3a2430bbc2" name="Changes" comment="5">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ace_tool/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ace_tool/ace_client.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ace_tool/ace_helpers.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ace_tool/ai_utils.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ace_tool/cfg_discovery.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ace_tool/config.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ace_tool/extraction.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ace_tool/outlook_reader.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ace_tool/overview.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ace_tool/utils.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ace_tool/validator.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/email_checks/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/email_checks/requirements.txt" afterDir="false" />
+    <list default="true" id="42a595b6-d943-4874-aa9e-5e3a2430bbc2" name="Changes" comment="6">
+      <change beforePath="$PROJECT_DIR$/COMPARISON.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DEPENDENCIES.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/email_checks/prepare_dataset.py" beforeDir="false" afterPath="$PROJECT_DIR$/email_checks/prepare_dataset.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -142,7 +133,15 @@
       <option name="project" value="LOCAL" />
       <updated>1762264792393</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="6">
+      <option name="closed" value="true" />
+      <created>1762267602239</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1762267602239</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -151,6 +150,7 @@
     <MESSAGE value="3" />
     <MESSAGE value="4" />
     <MESSAGE value="5" />
-    <option name="LAST_COMMIT_MESSAGE" value="5" />
+    <MESSAGE value="6" />
+    <option name="LAST_COMMIT_MESSAGE" value="6" />
   </component>
 </project>

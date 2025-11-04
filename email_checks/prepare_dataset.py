@@ -144,17 +144,36 @@ def split_dataset(X: Any, y: np.ndarray, config: dict[str, Any]) -> dict[str, An
     val_size = split_config.get('val_size', 0.1)
     random_state = split_config.get('random_state', 42)
     
+    # Check if we can use stratified splitting
+    unique_classes = np.unique(y)
+    n_classes = len(unique_classes)
+    use_stratify = n_classes >= 2
+    
+    if not use_stratify:
+        print(f"\n⚠ Warning: Only {n_classes} class(es) found. Using non-stratified split.")
+    
     # First split: train+val vs test
-    X_train_val, X_test, y_train_val, y_test = train_test_split(
-        X, y, test_size=test_size, random_state=random_state, stratify=y
-    )
+    if use_stratify:
+        X_train_val, X_test, y_train_val, y_test = train_test_split(
+            X, y, test_size=test_size, random_state=random_state, stratify=y
+        )
+    else:
+        X_train_val, X_test, y_train_val, y_test = train_test_split(
+            X, y, test_size=test_size, random_state=random_state
+        )
     
     # Second split: train vs val
     val_size_adjusted = val_size / (1 - test_size)  # Adjust for test split
-    X_train, X_val, y_train, y_val = train_test_split(
-        X_train_val, y_train_val, test_size=val_size_adjusted, 
-        random_state=random_state, stratify=y_train_val
-    )
+    if use_stratify:
+        X_train, X_val, y_train, y_val = train_test_split(
+            X_train_val, y_train_val, test_size=val_size_adjusted, 
+            random_state=random_state, stratify=y_train_val
+        )
+    else:
+        X_train, X_val, y_train, y_val = train_test_split(
+            X_train_val, y_train_val, test_size=val_size_adjusted, 
+            random_state=random_state
+        )
     
     return {
         'X_train': X_train,
@@ -183,19 +202,44 @@ def balance_classes(X: Any, y: np.ndarray, config: dict[str, Any]) -> tuple[Any,
     if not balance_config.get('enabled', False):
         return X, y
     
+    # Check if we have multiple classes
+    unique_classes = np.unique(y)
+    n_classes = len(unique_classes)
+    
+    if n_classes < 2:
+        print(f"\n⚠ Warning: Only {n_classes} class(es) found in labels. Cannot balance classes.")
+        print(f"   Label distribution: {np.bincount(y)}")
+        print(f"   Skipping class balancing. Consider:")
+        print(f"   - Using a different label strategy in config.json")
+        print(f"   - Disabling class balancing: 'balance.enabled': false")
+        print(f"   - Using clustering or unsupervised methods instead")
+        return X, y
+    
     balance_method = balance_config.get('method', 'smote')
     
     if balance_method == 'smote':
         # SMOTE oversampling
-        smote = SMOTE(random_state=42, sampling_strategy='auto')
-        X_balanced, y_balanced = smote.fit_resample(X, y)
-        return X_balanced, y_balanced
+        try:
+            smote = SMOTE(random_state=42, sampling_strategy='auto')
+            X_balanced, y_balanced = smote.fit_resample(X, y)
+            print(f"   Balanced classes: {np.bincount(y)} → {np.bincount(y_balanced)}")
+            return X_balanced, y_balanced
+        except Exception as e:
+            print(f"\n⚠ Warning: SMOTE balancing failed: {e}")
+            print(f"   Returning unbalanced data.")
+            return X, y
     
     elif balance_method == 'undersample':
         # Random undersampling
-        undersampler = RandomUnderSampler(random_state=42, sampling_strategy='auto')
-        X_balanced, y_balanced = undersampler.fit_resample(X, y)
-        return X_balanced, y_balanced
+        try:
+            undersampler = RandomUnderSampler(random_state=42, sampling_strategy='auto')
+            X_balanced, y_balanced = undersampler.fit_resample(X, y)
+            print(f"   Balanced classes: {np.bincount(y)} → {np.bincount(y_balanced)}")
+            return X_balanced, y_balanced
+        except Exception as e:
+            print(f"\n⚠ Warning: Undersampling failed: {e}")
+            print(f"   Returning unbalanced data.")
+            return X, y
     
     else:
         return X, y
@@ -297,7 +341,27 @@ def prepare_dataset(input_dir: str, output_dir: str, config: dict[str, Any]) -> 
     label_config = config.get('dataset', {}).get('labels', {})
     labels = create_labels(non_text_df, label_config)
     
-    print(f"Label distribution: {np.bincount(labels)}")
+    unique_classes = np.unique(labels)
+    n_classes = len(unique_classes)
+    label_dist = np.bincount(labels)
+    
+    print(f"Label distribution: {label_dist}")
+    
+    if n_classes < 2:
+        print(f"\n⚠ Warning: Only {n_classes} class(es) in labels!")
+        print(f"   This means all emails have the same label.")
+        print(f"   Classification models won't work well with single-class data.")
+        print(f"\n   Solutions:")
+        print(f"   1. Try a different label strategy in config.json:")
+        print(f"      - 'type': 'unread' (unread vs read)")
+        print(f"      - 'type': 'flagged' (flagged vs not flagged)")
+        print(f"      - 'type': 'has_attachment' (with/without attachments)")
+        print(f"   2. Use clustering or unsupervised methods:")
+        print(f"      - python baseline_models.py --task clustering")
+        print(f"      - python baseline_models.py --task nlp")
+        print(f"   3. Disable class balancing in config.json:")
+        print(f"      - 'balance.enabled': false")
+        print(f"\n   Continuing with dataset preparation (may skip balancing)...")
     
     # Combine features
     print("Combining features...")
