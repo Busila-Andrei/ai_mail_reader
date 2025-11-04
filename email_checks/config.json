@@ -26,6 +26,83 @@
     "progress_interval": 10,
     "json_indent": 2,
     "ensure_ascii": false
+  },
+  "feature_extraction": {
+    "input_pattern": "data/processed/emails_profiled_*.json",
+    "output_directory": "data/features",
+    "text_features": {
+      "tfidf_max_features": 1000,
+      "tfidf_min_df": 2,
+      "tfidf_max_df": 0.95,
+      "use_char_ngrams": false,
+      "char_ngram_features": 500,
+      "use_dimensionality_reduction": false,
+      "svd_components": 100
+    },
+    "structural_features": {
+      "categorical_columns": ["sender_domain"],
+      "max_categories_per_column": 20,
+      "min_category_frequency": 2,
+      "normalize_columns": ["word_count", "attachment_count", "recipient_count", "url_count", "email_count_in_body", "phone_count"],
+      "normalization_method": "standard"
+    },
+    "temporal_features": {
+      "use_cyclical_encoding": true
+    },
+    "metadata_features": {
+      "normalize_columns": ["importance", "category_count", "html_ratio"],
+      "normalization_method": "standard"
+    }
+  },
+  "dataset": {
+    "input_directory": "data/features",
+    "output_directory": "data/datasets",
+    "labels": {
+      "type": "importance",
+      "column_name": "importance",
+      "threshold": 2
+    },
+    "split": {
+      "test_size": 0.2,
+      "val_size": 0.1,
+      "random_state": 42
+    },
+    "balance": {
+      "enabled": true,
+      "method": "smote"
+    },
+    "export": {
+      "formats": ["npz", "parquet", "npy"]
+    },
+    "include_features": [
+      "word_count",
+      "attachment_count",
+      "recipient_count",
+      "url_count",
+      "hour_sin",
+      "hour_cos",
+      "day_sin",
+      "day_cos",
+      "importance",
+      "is_unread",
+      "is_flagged",
+      "has_attachments"
+    ]
+  },
+  "models": {
+    "input_directory": "data/datasets",
+    "output_directory": "data/models",
+    "clustering": {
+      "n_clusters": 5,
+      "dbscan_eps": 0.5,
+      "dbscan_min_samples": 5
+    },
+    "nlp": {
+      "n_topics": 5
+    },
+    "anomaly_detection": {
+      "contamination": 0.1
+    }
   }
 }
 
