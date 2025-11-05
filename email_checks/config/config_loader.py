@@ -42,16 +42,23 @@ DEFAULT_CONFIG = {
 }
 
 
-def load_config(config_path: str | Path = "config.json") -> dict[str, Any]:
+def load_config(config_path: str | Path = None) -> dict[str, Any]:
     """
     Load configuration from JSON file.
     
     Args:
-        config_path: Path to config.json file
+        config_path: Path to config.json file (default: config/config.json relative to project root)
         
     Returns:
         Dictionary with configuration settings
     """
+    if config_path is None:
+        # Default to config/config.json relative to project root
+        import sys
+        from pathlib import Path
+        project_root = Path(__file__).parent.parent
+        config_path = project_root / "config" / "config.json"
+    
     config_file = Path(config_path)
     
     if not config_file.exists():

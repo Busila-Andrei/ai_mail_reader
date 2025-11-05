@@ -18,7 +18,10 @@ from typing import Any
 
 import win32com.client as win32
 
-from config_loader import load_config, get_config_value
+# Add parent directory to path for imports
+sys.path.insert(0, str(Path(__file__).parent.parent))
+
+from config.config_loader import load_config, get_config_value
 
 
 def get_email_property(item: Any, prop_name: str, default: Any = None) -> Any:

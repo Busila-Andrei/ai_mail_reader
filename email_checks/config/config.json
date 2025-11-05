@@ -1,0 +1,27 @@
+{
+  "indexing": {
+    "chunk_size": 600,
+    "chunk_overlap": 100,
+    "embedding_model": "all-MiniLM-L6-v2",
+    "index_path": "data/faiss_index"
+  },
+  "llm": {
+    "model_name": "microsoft/DialoGPT-medium",
+    "device": "auto",
+    "max_length": 512,
+    "temperature": 0.7
+  },
+  "ocr": {
+    "preprocess": true,
+    "language": "ron+eng"
+  },
+  "email_parsing": {
+    "normalize_text": true,
+    "remove_signatures": true,
+    "remove_html": true
+  },
+  "chat": {
+    "top_k": 5,
+    "show_sources": 3
+  }
+}
