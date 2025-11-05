@@ -4,139 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="42a595b6-d943-4874-aa9e-5e3a2430bbc2" name="Changes" comment="7">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/email_checks/GETTING_STARTED.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/email_checks/ML_NEXT_STEPS.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/email_checks/ML_PIPELINE.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/email_checks/QUICK_START.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/email_checks/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/email_checks/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/email_checks/README_EXTRACTION.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/email_checks/baseline_models.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/email_checks/bootstrap_offline.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/email_checks/check_outlook_com.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/email_checks/config.example.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/email_checks/config.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/email_checks/config_loader.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/email_checks/extract_emails.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/email_checks/extract_features.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/email_checks/ml_utils.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/email_checks/packages/Brotli-1.1.0-cp313-cp313-win_amd64.whl" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/email_checks/packages/PyJWT-2.10.1-py3-none-any.whl" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/email_checks/packages/aiofiles-25.1.0-py3-none-any.whl" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/email_checks/packages/aiohappyeyeballs-2.6.1-py3-none-any.whl" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/email_checks/packages/aiohttp-3.13.2-cp313-cp313-win_amd64.whl" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/email_checks/packages/aiosignal-1.4.0-py3-none-any.whl" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/email_checks/packages/altair-5.5.0-py3-none-any.whl" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/email_checks/packages/annotated_doc-0.0.3-py3-none-any.whl" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/email_checks/packages/annotated_types-0.7.0-py3-none-any.whl" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/email_checks/packages/anyio-4.11.0-py3-none-any.whl" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/email_checks/packages/attrs-25.4.0-py3-none-any.whl" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/email_checks/packages/beautifulsoup4-4.14.2-py3-none-any.whl" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/email_checks/packages/certifi-2025.10.5-py3-none-any.whl" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/email_checks/packages/cffi-2.0.0-cp313-cp313-win_amd64.whl" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/email_checks/packages/charset_normalizer-3.4.4-cp313-cp313-win_amd64.whl" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/email_checks/packages/click-8.3.0-py3-none-any.whl" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/email_checks/packages/colorama-0.4.6-py2.py3-none-any.whl" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/email_checks/packages/contourpy-1.3.3-cp313-cp313-win_amd64.whl" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/email_checks/packages/cramjam-2.11.0-cp313-cp313-win_amd64.whl" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/email_checks/packages/cryptography-46.0.3-cp311-abi3-win_amd64.whl" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/email_checks/packages/cycler-0.12.1-py3-none-any.whl" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/email_checks/packages/fastapi-0.121.0-py3-none-any.whl" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/email_checks/packages/fastparquet-2024.11.0-cp313-cp313-win_amd64.whl" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/email_checks/packages/ffmpy-0.6.4-py3-none-any.whl" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/email_checks/packages/filelock-3.20.0-py3-none-any.whl" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/email_checks/packages/fonttools-4.60.1-cp313-cp313-win_amd64.whl" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/email_checks/packages/frozenlist-1.8.0-cp313-cp313-win_amd64.whl" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/email_checks/packages/fsspec-2025.10.0-py3-none-any.whl" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/email_checks/packages/gradio-3.36.1-py3-none-any.whl" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/email_checks/packages/gradio_client-1.13.3-py3-none-any.whl" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/email_checks/packages/h11-0.16.0-py3-none-any.whl" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/email_checks/packages/hf_xet-1.2.0-cp37-abi3-win_amd64.whl" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/email_checks/packages/httpcore-1.0.9-py3-none-any.whl" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/email_checks/packages/httpx-0.28.1-py3-none-any.whl" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/email_checks/packages/huggingface_hub-1.0.1-py3-none-any.whl" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/email_checks/packages/idna-3.11-py3-none-any.whl" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/email_checks/packages/imbalanced_learn-0.14.0-py3-none-any.whl" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/email_checks/packages/jinja2-3.1.6-py3-none-any.whl" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/email_checks/packages/joblib-1.5.2-py3-none-any.whl" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/email_checks/packages/jsonschema-4.25.1-py3-none-any.whl" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/email_checks/packages/jsonschema_specifications-2025.9.1-py3-none-any.whl" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/email_checks/packages/kiwisolver-1.4.9-cp313-cp313-win_amd64.whl" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/email_checks/packages/linkify_it_py-2.0.3-py3-none-any.whl" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/email_checks/packages/markdown_it_py-2.2.0-py3-none-any.whl" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/email_checks/packages/markupsafe-3.0.3-cp313-cp313-win_amd64.whl" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/email_checks/packages/matplotlib-3.10.7-cp313-cp313-win_amd64.whl" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/email_checks/packages/mdit_py_plugins-0.3.3-py3-none-any.whl" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/email_checks/packages/mdurl-0.1.2-py3-none-any.whl" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/email_checks/packages/msal-1.34.0-py3-none-any.whl" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/email_checks/packages/multidict-6.7.0-cp313-cp313-win_amd64.whl" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/email_checks/packages/narwhals-2.10.1-py3-none-any.whl" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/email_checks/packages/numpy-2.3.4-cp313-cp313-win_amd64.whl" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/email_checks/packages/numpy_typing_compat-20250818.2.3-py3-none-any.whl" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/email_checks/packages/optype-0.14.0-py3-none-any.whl" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/email_checks/packages/orjson-3.11.4-cp313-cp313-win_amd64.whl" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/email_checks/packages/packaging-25.0-py3-none-any.whl" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/email_checks/packages/pandas-2.3.3-cp313-cp313-win_amd64.whl" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/email_checks/packages/pandas_stubs-2.3.2.250926-py3-none-any.whl" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/email_checks/packages/pillow-12.0.0-cp313-cp313-win_amd64.whl" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/email_checks/packages/platformdirs-4.5.0-py3-none-any.whl" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/email_checks/packages/propcache-0.4.1-cp313-cp313-win_amd64.whl" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/email_checks/packages/psutil-7.1.3-cp37-abi3-win_amd64.whl" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/email_checks/packages/psycopg_binary-3.2.12-cp313-cp313-win_amd64.whl" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/email_checks/packages/psycopg_pool-3.2.7-py3-none-any.whl" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/email_checks/packages/pyarrow-22.0.0-cp313-cp313-win_amd64.whl" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/email_checks/packages/pycparser-2.23-py3-none-any.whl" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/email_checks/packages/pydantic-2.12.3-py3-none-any.whl" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/email_checks/packages/pydantic_core-2.41.4-cp313-cp313-win_amd64.whl" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/email_checks/packages/pydub-0.25.1-py2.py3-none-any.whl" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/email_checks/packages/pyee-13.0.0-py3-none-any.whl" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/email_checks/packages/pygments-2.19.2-py3-none-any.whl" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/email_checks/packages/pyparsing-3.2.5-py3-none-any.whl" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/email_checks/packages/python_dateutil-2.9.0.post0-py2.py3-none-any.whl" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/email_checks/packages/python_dotenv-1.2.1-py3-none-any.whl" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/email_checks/packages/python_multipart-0.0.20-py3-none-any.whl" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/email_checks/packages/pytz-2025.2-py2.py3-none-any.whl" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/email_checks/packages/pywin32-311-cp313-cp313-win_amd64.whl" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/email_checks/packages/pyyaml-6.0.3-cp313-cp313-win_amd64.whl" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/email_checks/packages/referencing-0.37.0-py3-none-any.whl" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/email_checks/packages/regex-2025.10.23-cp313-cp313-win_amd64.whl" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/email_checks/packages/requests-2.32.5-py3-none-any.whl" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/email_checks/packages/rpds_py-0.28.0-cp313-cp313-win_amd64.whl" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/email_checks/packages/rtree-1.4.1-py3-none-win_amd64.whl" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/email_checks/packages/scikit_learn-1.7.2-cp313-cp313-win_amd64.whl" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/email_checks/packages/scipy-1.16.3-cp313-cp313-win_amd64.whl" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/email_checks/packages/scipy_stubs-1.16.3.0-py3-none-any.whl" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/email_checks/packages/semantic_version-2.10.0-py2.py3-none-any.whl" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/email_checks/packages/shellingham-1.5.4-py2.py3-none-any.whl" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/email_checks/packages/six-1.17.0-py2.py3-none-any.whl" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/email_checks/packages/sniffio-1.3.1-py3-none-any.whl" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/email_checks/packages/snowballstemmer-2.2.0-py2.py3-none-any.whl" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/email_checks/packages/soupsieve-2.8-py3-none-any.whl" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/email_checks/packages/starlette-0.49.3-py3-none-any.whl" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/email_checks/packages/tenacity-9.1.2-py3-none-any.whl" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/email_checks/packages/threadpoolctl-3.6.0-py3-none-any.whl" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/email_checks/packages/tqdm-4.67.1-py3-none-any.whl" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/email_checks/packages/typer_slim-0.20.0-py3-none-any.whl" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/email_checks/packages/types_pytz-2025.2.0.20250809-py3-none-any.whl" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/email_checks/packages/typing_extensions-4.15.0-py3-none-any.whl" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/email_checks/packages/typing_inspection-0.4.2-py3-none-any.whl" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/email_checks/packages/tzdata-2025.2-py2.py3-none-any.whl" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/email_checks/packages/uc_micro_py-1.0.3-py3-none-any.whl" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/email_checks/packages/urllib3-2.5.0-py3-none-any.whl" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/email_checks/packages/uvicorn-0.38.0-py3-none-any.whl" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/email_checks/packages/websockets-15.0.1-cp313-cp313-win_amd64.whl" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/email_checks/packages/wheel-0.45.1-py3-none-any.whl" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/email_checks/packages/xxhash-3.6.0-cp313-cp313-win_amd64.whl" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/email_checks/packages/yarl-1.22.0-cp313-cp313-win_amd64.whl" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/email_checks/packages/zipp-3.23.0-py3-none-any.whl" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/email_checks/packages/zstandard-0.25.0-cp313-cp313-win_amd64.whl" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/email_checks/prepare_dataset.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/email_checks/prepare_packages.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/email_checks/profile_data.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/email_checks/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/email_checks/requirements.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" />
-    </list>
+    <list default="true" id="42a595b6-d943-4874-aa9e-5e3a2430bbc2" name="Changes" comment="8" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -275,7 +143,15 @@
       <option name="project" value="LOCAL" />
       <updated>1762268196510</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="8">
+      <option name="closed" value="true" />
+      <created>1762319665727</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1762319665727</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -286,6 +162,7 @@
     <MESSAGE value="5" />
     <MESSAGE value="6" />
     <MESSAGE value="7" />
-    <option name="LAST_COMMIT_MESSAGE" value="7" />
+    <MESSAGE value="8" />
+    <option name="LAST_COMMIT_MESSAGE" value="8" />
   </component>
 </project>
